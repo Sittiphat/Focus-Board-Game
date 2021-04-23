@@ -216,47 +216,46 @@ class FocusGame:
         print(self._board)
 
 
-# # TODO: Anyone can move any piece on top?
-# # Used for testing only
-# def main():
-#     game = FocusGame(('PlayerA', 'R'), ('PlayerB', 'G'))
-#     # print(game.move_piece('PlayerA', (0, 0), (0, 1), 1))  # Returns message "successfully moved"
-#     # print(game.move_piece('PlayerB', (0, 2), (0, 1), 1))
-#     # print(game.move_piece('PlayerA', (0, 3), (0, 1), 1))
-#     # print(game.move_piece('PlayerB', (0, 4), (0, 1), 1))
-#     # print(game.move_piece('PlayerA', (0, 5), (0, 1), 1))
-#     # print(game.move_piece('PlayerB', (1, 0), (0, 1), 1))
-#     # print(game.move_piece('PlayerA', (0, 1), (0, 0), 1))
-#
-#     print(game.move_piece('PlayerA', (0, 0), (0, 1), 1))  # Returns message "wins"
-#     print(game.move_piece('PlayerB', (1, 0), (1, 1), 1))
-#     print(game.move_piece('PlayerA', (0, 1), (0, 2), 2))
-#     print(game.move_piece('PlayerB', (1, 1), (1, 2), 2))
-#     print(game.move_piece('PlayerA', (0, 2), (0, 3), 3))
-#     print(game.move_piece('PlayerB', (1, 2), (1, 3), 3))
-#     print(game.move_piece('PlayerA', (0, 3), (0, 4), 4))
-#     print(game.move_piece('PlayerB', (1, 3), (1, 4), 4))
-#     print(game.move_piece('PlayerA', (0, 4), (0, 5), 5))
-#     print(game.move_piece('PlayerB', (1, 4), (1, 5), 5))
-#     print(game.move_piece('PlayerA', (0, 5), (1, 5), 5))
-#     print(game.move_piece('PlayerB', (2, 2), (2, 3), 1))
-#     print(game.move_piece('PlayerA', (1, 5), (2, 5), 5))
-#     print(game.move_piece('PlayerB', (2, 3), (2, 4), 2))
-#     print(game.move_piece('PlayerA', (2, 5), (2, 4), 5))
-#     print(game.move_piece('PlayerB', (3, 5), (3, 4), 1))
-#     print(game.move_piece('PlayerA', (2, 4), (3, 4), 5))
-#
-#     game.print_stuff()
-#     # print(game.show_pieces((0, 1)))  # Returns ['R','R']
-#     print(game.show_captured('PlayerA'))  # Returns 0
-#     # game.reserved_move('PlayerA', (0, 0))  # Returns message "No pieces in reserve"
-#     print(game.show_reserve('PlayerA'))  # Returns 0
-#
-#     print(game.show_captured('PlayerB'))  # Returns 0
-#     # game.reserved_move('PlayerA', (0, 0))  # Returns message "No pieces in reserve"
-#     print(game.show_reserve('PlayerB'))  # Returns 0
-#     game.print_stuff()
-#
-#
-# if __name__ == "__main__":
-#     main()
+# Used for testing only
+def main():
+    game = FocusGame(('PlayerA', 'R'), ('PlayerB', 'G'))
+    # print(game.move_piece('PlayerA', (0, 0), (0, 1), 1))  # Returns message "successfully moved"
+    # print(game.move_piece('PlayerB', (0, 2), (0, 1), 1))
+    # print(game.move_piece('PlayerA', (0, 3), (0, 1), 1))
+    # print(game.move_piece('PlayerB', (0, 4), (0, 1), 1))
+    # print(game.move_piece('PlayerA', (0, 5), (0, 1), 1))
+    # print(game.move_piece('PlayerB', (1, 0), (0, 1), 1))
+    # print(game.move_piece('PlayerA', (0, 1), (0, 0), 1))
+
+    print(game.move_piece('PlayerA', (0, 0), (0, 1), 1))  # Returns message "wins"
+    print(game.move_piece('PlayerB', (1, 0), (1, 1), 1))
+    print(game.move_piece('PlayerA', (0, 1), (0, 2), 2))
+    print(game.move_piece('PlayerB', (1, 1), (1, 2), 2))
+    print(game.move_piece('PlayerA', (0, 2), (0, 3), 3))
+    print(game.move_piece('PlayerB', (1, 2), (1, 3), 3))
+    print(game.move_piece('PlayerA', (0, 3), (0, 4), 4))
+    print(game.move_piece('PlayerB', (1, 3), (1, 4), 4))
+    print(game.move_piece('PlayerA', (0, 4), (0, 5), 5))
+    print(game.move_piece('PlayerB', (1, 4), (1, 5), 5))
+    print(game.move_piece('PlayerA', (0, 5), (1, 5), 5))
+    print(game.move_piece('PlayerB', (2, 2), (2, 3), 1))
+    print(game.move_piece('PlayerA', (1, 5), (2, 5), 5))
+    print(game.move_piece('PlayerB', (2, 3), (2, 4), 2))
+    print(game.move_piece('PlayerA', (2, 5), (2, 4), 5))
+    print(game.move_piece('PlayerB', (3, 5), (3, 4), 1))
+    print(game.move_piece('PlayerA', (2, 4), (3, 4), 5))
+
+    game.print_stuff()
+    # print(game.show_pieces((0, 1)))  # Returns ['R','R']
+    print(game.show_captured('PlayerA'))  # Returns 0
+    # game.reserved_move('PlayerA', (0, 0))  # Returns message "No pieces in reserve"
+    print(game.show_reserve('PlayerA'))  # Returns 0
+
+    print(game.show_captured('PlayerB'))  # Returns 0
+    # game.reserved_move('PlayerA', (0, 0))  # Returns message "No pieces in reserve"
+    print(game.show_reserve('PlayerB'))  # Returns 0
+    game.print_stuff()
+
+
+if __name__ == "__main__":
+    main()
